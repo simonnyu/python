@@ -1,0 +1,1118 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>課程資料查詢</title>
+
+<script LANGUAGE="JavaScript">
+
+function Query_Room(tSclass, tCono) {
+  var PosX,PosY;
+     
+  window.open('Room.asp?OpenYear='+document.MenuForm.OpenYear.value+'&Helf='+document.MenuForm.Helf.value+
+              '&Sclass='+tSclass+'&Cono='+tCono,'ncal','width=500,height=300,top=20,left=50,scrollbars');
+}
+
+function Query_Notup(tSclass, tCono) {
+  var PosX,PosY;
+   
+  window.open('Notup.asp?OpenYear='+document.MenuForm.OpenYear.value+'&Helf='+document.MenuForm.Helf.value+
+              '&Sclass='+tSclass+'&Cono='+tCono,'ncal','width=850,height=450,top=20,left=50,scrollbars');
+}
+
+function Query_Limit(tSclass, tCono, tKind) {
+  var PosX,PosY;
+  
+  window.open('Limit.asp?OpenYear='+document.MenuForm.OpenYear.value+'&Helf='+document.MenuForm.Helf.value+
+              '&Sclass='+tSclass+'&Cono='+tCono+'&Kind='+tKind,'ncal','width=550,height=350,top=20,left=50,scrollbars');
+}
+
+function Query_Subject(tSclass, tCono) {
+  var PosX,PosY;
+    
+  window.open('Subject.asp?OpenYear='+document.MenuForm.OpenYear.value+'&Helf='+document.MenuForm.Helf.value+
+              '&Sclass='+tSclass+'&Cono='+tCono,'ncal','width=500,height=300,top=20,left=50,scrollbars');
+}
+
+function Query_Course(tSclass, tCono) {   
+
+  document.MenuForm.Sclass.value = tSclass;
+  document.MenuForm.Cono.value = tCono;
+  document.MenuForm.action = "TContent.asp";
+  document.MenuForm.target = "_blank";
+  document.MenuForm.submit();
+
+}
+
+function Query_Document() {
+  var PosX,PosY;
+  
+  window.open('Document.asp','ncal','width=630,height=400,top=20,left=50,scrollbars');
+}
+
+function Query_Document2() {
+  var PosX,PosY;
+   
+  window.open('上課時間.htm','ncal','width=350,height=500,top=20,left=50,scrollbars');
+}
+
+</script>
+
+</head>
+
+<body background="Pic/dye_st_0073.gif">
+
+<center>
+<img border="0" src="Pic/title2.jpg"><br><br>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%" style="color: #000080; font-size: 10pt">
+<tr><td width=""33%"">開課學年：104　　開課學期：第2學期</td><td width=""33%"">開課部別：大學部</td><td width=""34%"">開課系所：資訊管理學系</td></tr><tr><td width=""33%"">開課班級：無</td><td width=""33%"">授課教師：無</td><td width=""34%"">上課時間：無</td></tr></table><br><hr><br><form method="POST" Name="MenuForm" action="">
+<input type="hidden" name="OpenYear" value="104">
+<input type="hidden" name="Helf" value="2">
+<input type="hidden" name="Sclass" value="">
+<input type="hidden" name="Cono" value="">
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="font-size: 10pt">
+<tr>
+<th width="4%" rowspan="2" height="27">系所</th>
+<th width="5%" rowspan="2" height="27">課號</th>
+<th width="3%" rowspan="2" height="27">年<br>級</th>
+<th width="3%" rowspan="2" height="27">班<br>別</th>
+<th width="12%" rowspan="2" height="27">課程名稱</th>
+<th width="3%" rowspan="2" height="27">學<br>分</th>
+<th width="3%" rowspan="2" height="27">修<br>別</th>
+<th width="3%" rowspan="2" height="27"><a href="javascript: void(0)" OnClick="Query_Document();">限<br>修<br>人<br>數</a></th>
+<th width="3%" rowspan="2" height="27"><a href="javascript: void(0)" OnClick="Query_Document();">選<br>課<br>確<br>定</a></th>
+<th width="3%" rowspan="2" height="27"><a href="javascript: void(0)" OnClick="Query_Document();">線<br>上<br>人<br>數</a></th>
+<th width="3%" rowspan="2" height="27">餘<br>額</th>
+<th width="7%" rowspan="2" height="27">授課<br>教師</th>
+<th width="7%" rowspan="2" height="27"><a href="Position.gif" target="_blank" >上課<br>教室</a></th>
+<th width="26%" colspan="7" height="12"><a href="javascript: void(0)" OnClick="Query_Document2();">上課時間</a></th>
+<th width="5%" rowspan="2" height="27">先修<br>限修<br>學程</th>
+<th width="10%" rowspan="2" height="27">備註</th>
+</tr>
+<tr>
+<th width="4%" height="13">一</th>
+<th width="4%" height="13">二</th>
+<th width="4%" height="13">三</th>
+<th width="4%" height="13">四</th>
+<th width="4%" height="13">五</th>
+<th width="3%" height="13">六</th>
+<th width="3%" height="13">日</th>
+</tr>
+<tr align="center">
+<td width="4%" height="27">GR</td>
+<td width="5%" height="27">S33B</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=GR&Cono=S33B" target="_blank">體育(二)-資管系</a></td>
+<td width="3%" height="27">0</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">65</td>
+<td width="3%" height="27">54</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">11</td>
+<td width="7%" height="27">高群超<br></td>
+<td width="7%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">3,4<br></td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('GR', 'S33B', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">籃球場</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">A051</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=A051" target="_blank">微積分</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">蕭漢威<br></td>
+<td width="7%" height="27">M01-206</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'A051', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">教室為M01-206</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">A081</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=A081" target="_blank">會計學</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">63</td>
+<td width="3%" height="27">62</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">吳佳玲<br></td>
+<td width="7%" height="27">M01-201</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'A081', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為M01-201</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">A15A</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=A15A" target="_blank">物件導向程式設計Ⅰ</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">67</td>
+<td width="3%" height="27">66</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">丁一賢<br>業界教師<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'A15A', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B081</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B081" target="_blank">資訊管理導論</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">52</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">8</td>
+<td width="7%" height="27">林杏子<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B081', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D531</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D531" target="_blank">數位遊戲設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">25</td>
+<td width="7%" height="27">趙建雄<br>陶幼慧<br>楊書成<br>丁一賢<br>王凱<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">3,4,<br>Y</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+　</td>
+<td width="10%" height="27" align="left">與資管大一、大二、大三、大四合開</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B02B</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B02B" target="_blank">統計學(二)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">51</td>
+<td width="3%" height="27">42</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">9</td>
+<td width="7%" height="27">楊書成<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B02B', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B051</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B051" target="_blank">資料庫管理</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">57</td>
+<td width="3%" height="27">54</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">3</td>
+<td width="7%" height="27">楊書成<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B051', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B101</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B101" target="_blank">電子商務</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">58</td>
+<td width="3%" height="27">51</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">7</td>
+<td width="7%" height="27">王凱<br></td>
+<td width="7%" height="27">M01-206</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B101', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為M01-206</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B121</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B121" target="_blank">網頁程式設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">44</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">16</td>
+<td width="7%" height="27">丁一賢<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B121', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B651</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B651" target="_blank">科技英文</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">16</td>
+<td width="3%" height="27">7</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">9</td>
+<td width="7%" height="27">王學亮<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B651', '限修及外加');">限修及外加</a><br><br><a href="javascript: void(0)" OnClick="Query_Subject('IM', 'B651');">學程</a></td>
+<td width="10%" height="27" align="left">教室為M01-302（全英語授課-財經管理與資訊應用全英語學程）</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C721</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C721" target="_blank">Python程式設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">37</td>
+<td width="3%" height="27">29</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">8</td>
+<td width="7%" height="27">蕭漢威<br></td>
+<td width="7%" height="27">L01-107</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C721', '外加');">外加</a></td>
+<td width="10%" height="27" align="left">限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為L01-107</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D531</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D531" target="_blank">數位遊戲設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">25</td>
+<td width="7%" height="27">趙建雄<br>陶幼慧<br>楊書成<br>丁一賢<br>王凱<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">3,4,<br>Y</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+　</td>
+<td width="10%" height="27" align="left">與資管大一、大二、大三、大四合開</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">B621</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=B621" target="_blank">人力資源管理</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">27</td>
+<td width="3%" height="27">26</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">郭英峰<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'B621', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C03A</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C03A" target="_blank">專案開發I(A)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">12</td>
+<td width="3%" height="27">9</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">3</td>
+<td width="7%" height="27">蕭漢威<br>楊新章<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C03A', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">請蕭漢威老師、楊新章老師指導之學生組選修之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C03B</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C03B" target="_blank">專案開發I(B)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">12</td>
+<td width="3%" height="27">8</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">4</td>
+<td width="7%" height="27">趙建雄<br>王學亮<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C03B', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">請王學亮老師、趙建雄老師指導之學生組選修之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C03C</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C03C" target="_blank">專案開發I(C)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">12</td>
+<td width="3%" height="27">10</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">2</td>
+<td width="7%" height="27">林杏子<br>楊書成<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C03C', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">請林杏子老師、楊書成老師指導之學生組選修之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C03D</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C03D" target="_blank">專案開發I(D)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">13</td>
+<td width="3%" height="27">9</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">4</td>
+<td width="7%" height="27">陶幼慧<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C03D', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">請陶幼慧老師、吳建興老師指導之學生組選修之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C03E</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C03E" target="_blank">專案開發I(E)</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">12</td>
+<td width="3%" height="27">8</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">4</td>
+<td width="7%" height="27">郭英峰<br>丁一賢<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C03E', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">請郭英峰老師、丁一賢老師指導之學生組選修之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C041</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C041" target="_blank">作業系統</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">必</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">54</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">6</td>
+<td width="7%" height="27">楊新章<br></td>
+<td width="7%" height="27">M01-204</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C041', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">教室為M01-204</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C562</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C562" target="_blank">企業資源規劃與供應鏈管理</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">65</td>
+<td width="3%" height="27">22</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">43</td>
+<td width="7%" height="27">趙建雄<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">5,6,<br>7</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C562', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C643</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C643" target="_blank">行動商務</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">53</td>
+<td width="3%" height="27">25</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">28</td>
+<td width="7%" height="27">趙建雄<br></td>
+<td width="7%" height="27">M01-205</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C643', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為M01-205</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C662</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C662" target="_blank">Web 前端開發</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">30</td>
+<td width="3%" height="27">29</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">廖洧杰<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">10,11,<br>12</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C662', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">與資管大四合開，教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C683</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C683" target="_blank">CCNA網路認證課程</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">23</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">37</td>
+<td width="7%" height="27">趙志宏<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">9,10,<br>11</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C683', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C711</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C711" target="_blank">英文簡報技巧</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">15</td>
+<td width="3%" height="27">8</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">7</td>
+<td width="7%" height="27">陶幼慧<br></td>
+<td width="7%" height="27">M01-417</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C711', '限修');">限修</a><br><br><a href="javascript: void(0)" OnClick="Query_Subject('IM', 'C711');">學程</a></td>
+<td width="10%" height="27" align="left">教室為M01-417（全英語授課-財經管理與資訊應用全英語學程）</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D531</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D531" target="_blank">數位遊戲設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">25</td>
+<td width="7%" height="27">趙建雄<br>陶幼慧<br>楊書成<br>丁一賢<br>王凱<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">3,4,<br>Y</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+　</td>
+<td width="10%" height="27" align="left">與資管大一、大二、大三、大四合開</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D60A</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D60A" target="_blank">企業實習Ⅰ</a></td>
+<td width="3%" height="27">9</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">趙建雄<br>王凱<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">2,3,<br>4</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'D60A', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">如有參加企業實習之同學，要修習本課程請洽王凱老師指定加簽之，教室為M01-302</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D60C</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D60C" target="_blank">企業實習Ⅲ</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">趙建雄<br>王凱<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">5,6,<br>7</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'D60C', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">如有參加企業實習之同學，要修習本課程請洽王凱老師指定加簽之，教室為M01-302</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">F624</td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=F624" target="_blank">數位行銷</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">郭英峰<br></td>
+<td width="7%" height="27">M01-204</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'F624', '外加');">外加</a></td>
+<td width="10%" height="27" align="left">與資管大四、碩一、碩二合開，限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為M01-204</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">C662</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=C662" target="_blank">Web 前端開發</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">30</td>
+<td width="3%" height="27">29</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">廖洧杰<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">10,11,<br>12</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'C662', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">與資管大三合開，教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D531</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D531" target="_blank">數位遊戲設計</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">60</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">25</td>
+<td width="7%" height="27">趙建雄<br>陶幼慧<br>楊書成<br>丁一賢<br>王凱<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">3,4,<br>Y</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+　</td>
+<td width="10%" height="27" align="left">與資管大一、大二、大三、大四合開</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D541</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D541" target="_blank">網路安全技術</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">42</td>
+<td width="3%" height="27">41</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">1</td>
+<td width="7%" height="27">梁明章<br></td>
+<td width="7%" height="27">L01-108</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">6,7,<br>8</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'D541', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">教室為L01-108</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D60A</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D60A" target="_blank">企業實習Ⅰ</a></td>
+<td width="3%" height="27">9</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">2</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">趙建雄<br>王凱<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">2,3,<br>4</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'D60A', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">總實習時數應達486小時。如有參加企業實習之同學，要修習本課程請洽王凱老師指定加簽之，教室為M01-302</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">D60C</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=D60C" target="_blank">企業實習Ⅲ</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">1</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">趙建雄<br>王凱<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">5,6,<br>7</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'D60C', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">總實習時數應達162小時。如有參加企業實習之同學，要修習本課程請洽王凱老師指定加簽之，教室為M01-302</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">F503</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=F503" target="_blank">資訊科技與商業模式</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">15</td>
+<td width="3%" height="27">8</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">7</td>
+<td width="7%" height="27">王凱<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'F503', '限修及外加');">限修及外加</a></td>
+<td width="10%" height="27" align="left">與資管碩一合開，限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為M01-302</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">F624</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=F624" target="_blank">數位行銷</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">35</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">0</td>
+<td width="7%" height="27">郭英峰<br></td>
+<td width="7%" height="27">M01-204</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'F624', '外加');">外加</a></td>
+<td width="10%" height="27" align="left">與資管大三、碩一、碩二合開，限資管系選修，外系同學欲選修可洽任課老師指定加簽之，教室為M01-204</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IM</td>
+<td width="5%" height="27">F631</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IM&Cono=F631" target="_blank">巨量與開放資料應用開發</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">30</td>
+<td width="3%" height="27">10</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">20</td>
+<td width="7%" height="27">林杏子<br>蕭漢威<br>楊新章<br></td>
+<td width="7%" height="27">M01-302</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">2,3,<br>4</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+<a href="javascript: void(0)" OnClick="Query_Limit('IM', 'F631', '限修');">限修</a></td>
+<td width="10%" height="27" align="left">與資管碩一合開</td>
+</tr>
+<tr align="center">
+<td width="4%" height="27">IMA</td>
+<td width="5%" height="27">F551</td>
+<td width="3%" height="27">4</td>
+<td width="3%" height="27">A</td>
+<td width="12%" height="27" align="left">
+<a href="tcontent.asp?OpenYear=104&Helf=2&Sclass=IMA&Cono=F551" target="_blank">供應鏈管理</a></td>
+<td width="3%" height="27">3</td>
+<td width="3%" height="27">選</td>
+<td width="3%" height="27">15</td>
+<td width="3%" height="27">12</td>
+<td width="3%" height="27">-</td>
+<td width="3%" height="27">3</td>
+<td width="7%" height="27">趙建雄<br></td>
+<td width="7%" height="27">M01-417</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">10,11,<br>12</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="4%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="3%" height="27">　</td>
+<td width="5%" height="27">
+　</td>
+<td width="10%" height="27" align="left">與資管碩一及IMBA合開，教室為M01-417（全英語授課-財經管理與資訊應用全英語學程）</td>
+</tr>
+  
+</table>
+</form>
+</center>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
